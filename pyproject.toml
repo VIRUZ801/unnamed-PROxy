@@ -1,0 +1,16 @@
+[project]
+name = "vodka"
+version = "0.1.0"
+description = "Custom Python proxy rotation library with async support and daemon."
+authors = [{name="deviljin", email="dynmtcndy@gmail.com"}]
+requires-python = ">=3.11"
+dependencies = [
+    "requests",
+    "aiohttp",
+    "python-dotenv",
+    "selenium",
+    "cryptography",
+]
+
+[tool.poetry.scripts]
+proxy-rotator = "proxy_rotator.cli:main"
